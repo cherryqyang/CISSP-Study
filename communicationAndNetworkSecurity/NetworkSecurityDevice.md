@@ -8,10 +8,10 @@ graph LR
     NSD["Network/Security Devices"]:::security
 
     subgraph  RSD ["Routing and Switching Devices"]
-        router(Router\nLayer 3)
-        switch(Switch\nLayer 2)
-        dns(DNS\nLayer 7)
-        dhcp(DHCP\nLayer 7)
+        router(Router\nLayer 3- Network)
+        switch(Switch\nLayer 2 - DataLink)
+        dns(DNS\nLayer 7 -- Application)
+        dhcp(DHCP\nLayer 7 -- Application)
     end
 
     subgraph SD ["Security Devices\n"]
