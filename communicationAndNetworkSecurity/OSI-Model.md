@@ -6,12 +6,12 @@ flowchart TD
     L7 -->|TLS/SSL<br>End-to-end encryption| E7[Encryption]
     L7 -->|Devices| G7[Application Firewall]
 
-    L6(Presentation Layer) -->|SSL<br>TLS<br>MIME| P6[Protocols]
+    L6(Presentation Layer) -->|Protocols| P6[SSL<br>TLS<br>MIME]
     L6 -->|Threats| T6[Encryption attacks<br>MIME type attacks]
     L6 -->|Data| D6[Data Unit]
     L6 -->|TLS/SSL<br>Encryption formats| E6[Encryption]
 
-    L5(Session Layer) -->|NetBIOS&RPC<br>SSH<br>TLS| P5[Protocols]
+    L5(Session Layer) -->|Protocols | P5[NetBIOS&RPC<br>SSH<br>TLS]
     L5 -->|Threats| T5[Session hijacking<br>Man-in-the-middle attacks<br>Session fixation]
     L5 -->|Data| D5[Data Unit]
     L5 -->|SSH<br>TLS| E5[Encryption]
