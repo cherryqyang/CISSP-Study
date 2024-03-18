@@ -20,7 +20,7 @@ graph LR
         firewall2(Next-generation Firewall\nLayer2 Datalink -- Layer7 Application)
         ids_ips("IDS/IPS\nLayer 3 Network -7 Application")
         dlp(Data Loss Prevention\nLayer 7 -- Application)
-        nac(Network Access Control\nayer2 Datalink - Layer7 Applicatio)
+        nac(Network Access Control\nLayer2 Datalink - Layer7 Applicatio)
         proxy(Proxy Server\nLayer 7--Application )
     end
 
