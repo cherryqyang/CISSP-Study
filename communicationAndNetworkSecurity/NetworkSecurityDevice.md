@@ -15,11 +15,13 @@ graph LR
     end
 
     subgraph SD ["Security Devices\n"]
-        firewall(Firewall\nLayers 3-4)
-        ids_ips("IDS/IPS\nLayers 3-7")
-        dlp(Data Loss Prevention\nLayer 7)
-        nac(Network Access Control\nLayers 2-7)
-        proxy(Proxy Server\nLayer 7)
+        firewall(Static Packet-Filtering Firewall\nLayer3--Network \n Layer4--Transport)
+        firewall1(Circuit-Level Firewall\nLayer5--Session)
+        firewall2(Next-generation Firewall\nLayer2 Datalink -- Layer7 Application)
+        ids_ips("IDS/IPS\nLayer 3 Network -7 Application")
+        dlp(Data Loss Prevention\nLayer 7 -- Application)
+        nac(Network Access Control\nayer2 Datalink - Layer7 Applicatio)
+        proxy(Proxy Server\nLayer 7--Application )
     end
 
     subgraph CED ["Connectivity Enhancement Devices\n"]
@@ -39,6 +41,6 @@ graph LR
     NSD-->NMMD
     
     class router,switch,dns,dhcp routingSwitching;
-    class firewall,ids_ips,dlp,nac,proxy security;
+    class firewall,firewall1,firewall2,ids_ips,dlp,nac,proxy security;
     class vpn,wap,lb connectivity;
     class nms,probe monitoring;
