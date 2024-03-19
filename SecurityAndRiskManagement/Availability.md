@@ -19,8 +19,8 @@ graph LR
     Redundancy --> DataReplication
     Redundancy --> HardwareRedundancy
 
-    DisasterRecovery --> BCP
-    DisasterRecovery --> DRP
+    DisasterRecovery --> BCP[Business Continuity Planning]
+    DisasterRecovery --> DRP[Disaster Recovery Planning]
 
     FaultTolerance --> SystemDesign
     FaultTolerance --> RealTimeReplication
