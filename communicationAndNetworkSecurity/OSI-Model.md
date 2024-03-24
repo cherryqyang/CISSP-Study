@@ -41,7 +41,7 @@ flowchart TD
     L2 -->|Address| G2[Mac Address]
 
     L1(Physical Layer) -->|Protocols| P1[Ethernet<br>USB<br>Bluetooth<br>802.11]
-    L1 -->|Threats| T1[Physical damage<br>Wiretapping<br>Eavesdropping<br>Interference]
+    L1 -->|Threats| T1[Physical damage<br>Tampering<br>Wiretapping<br>Eavesdropping<br>Interference]
     L1 -->|Data Unit| D1[Bit]
     L1 -->|Security| E1[Physical security]
     L1 -->|Devices| F1[Hubs, Repeaters<br> Concentrators]
