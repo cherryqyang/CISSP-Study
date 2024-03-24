@@ -36,7 +36,7 @@ flowchart TD
     L2(Data Link Layer) -->|Protocols| P2[802.x, ARP, PPTP<br> PPP, PAP<br> CHAP, EAP]
     L2 -->|Threats | T2[MAC spoofing<br>ARP spoofing<br>LAN switch attacks<br>Spanning tree attack]
     L2 -->|Data Unit| D2[Frame]
-    L2 -->|MACsec| E2[Encryption]
+    L2 -->|Encryption| E2[MACsec <br>WEP<br>WPA1/WPA2/WAP3]
     L2 -->|Devices| F2[Switches & Bridges]
     L2 -->|Address| G2[Mac Address]
 
