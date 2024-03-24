@@ -40,7 +40,7 @@ flowchart TD
     L2 -->|Devices| F2[Switches & Bridges]
     L2 -->|Address| G2[Mac Address]
 
-    L1(Physical Layer) -->|Protocols| P1[Ethernet<br>USB<br>Bluetooth<br>802.11]
+    L1(Physical Layer) -->|Protocols| P1[Ethernet<br>USB<br>Bluetooth<br>802.11<br>GSM/CDMA/5G<br>DSL]
     L1 -->|Threats| T1[Physical damage<br>Tampering<br>Wiretapping<br>Eavesdropping<br>Interference]
     L1 -->|Data Unit| D1[Bit]
     L1 -->|Security| E1[Physical security]
