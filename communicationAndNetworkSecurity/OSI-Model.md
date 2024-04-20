@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    L7(Application Layer) -->|Protocols| P7[HTTP/S, DNS<br>SSH,FTP/S<br>SNMTP, LDAP, DHCP]
+    L7(Application Layer) -->|Protocols| P7[HTTP/S, TLS DNS, Telnet<br>SSH,FTP/S, LPD, SNMP<br>NFS, SMTP,POP3, IMAP, LDAP, DHCP]
     L7 -->|Threats| T7[Malware<br>Phishing<br>Application vulnerabilities<br>DDoS attacks]
     L7 -->|Network Container| D7[Prodocol Data Unit-PDU]
     L7 -->|TLS/SSL<br>End-to-end encryption| E7[Encryption]
@@ -38,7 +38,7 @@ flowchart TD
     L2 -->|Network Container| D2[Frame]
     L2 -->|Encryption| E2[MACsec <br>WEP<br>WPA1/WPA2/WAP3]
     L2 -->|Devices| F2[Switches & Bridges]
-    L2 -->|Address| G2[Mac Address]
+    L2 -->|Address| G2[Mac Address--6bytes48bits<br>first 3bytes-OUI-vendor/manufacture]
 
     L1(Physical Layer) -->|Protocols| P1[Ethernet<br>USB<br>Bluetooth<br>802.11<br>GSM/CDMA/5G<br>DSL]
     L1 -->|Threats| T1[Physical damage<br>Tampering<br>Wiretapping<br>Eavesdropping<br>Interference]
