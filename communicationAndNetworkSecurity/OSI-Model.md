@@ -15,7 +15,7 @@ flowchart TD
     L5 -->|Threats| T5[Session hijacking<br>Man-in-the-middle attacks<br>Session fixation]
     L5 -->|Network Container| D5[Prodocol Data Unit-PDU]
     L5 -->|SSH<br>TLS| E5[Encryption]
-    L5 -->|Devices| F5[ircuit Proxy Firewall]
+    L5 -->|Devices| F5[Circuit Proxy Firewall<br> Circuit Level gateway]
     L5 -->|Address| G5[How to address]
 
     L4(Transport Layer) -->|Protocols| P4[TCP/UDP <br> SSL/TLS & BGP]
